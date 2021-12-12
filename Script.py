@@ -22,7 +22,7 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
-    RDX_TXT = """Help: <b>IMDB Modules</b> 
+    IMDB_TXT = """Help: <b>IMDB Modules</b> 
 
 <b>Commands and Usage:</b>
 • /imdb  - <code>get the film information from IMDb source.</code>
