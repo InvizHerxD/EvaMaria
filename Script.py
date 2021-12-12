@@ -22,6 +22,8 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
+    CONTECT_TXT = """Help: <b>IMDB Modules</b>
+
     IMDB_TXT = """Help: <b>IMDB Modules</b> 
 
 <b>Commands and Usage:</b>
