@@ -98,7 +98,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -624,7 +624,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -649,11 +649,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('🗑', callback_data='close_data')]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
+            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('🗑', callback_data='close_data')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -739,8 +739,8 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist)) # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(8)
+        k = = await msg.reply_photo(photo="https://telegra.ph/file/90774d8c83299d11b2199.jpg", caption="<b>𝚂𝚘𝚛𝚛𝚢, 𝙽𝚘 𝙼𝚘𝚟𝚒𝚎𝚜/𝚂𝚎𝚛𝚒𝚎𝚜 𝚁𝚎𝚕𝚊𝚝𝚎𝚍 𝚝𝚘 𝚝𝚑𝚎 𝙶𝚒𝚟𝚎𝚗 𝚆𝚘𝚛𝚍 𝚆𝚊𝚜 𝙵𝚘𝚞𝚗𝚍​</b>\n\n<b>𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔</b>\n\n<b>🔷 Not Released Yet\n🔶 Incorrect Spelling\n🔷 Not Uploaded By Owner\n\n<b>Cᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ Oᴡɴᴇʀ​ 👇</b>", reply_markup = one_button)
+        await asyncio.sleep(15)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
