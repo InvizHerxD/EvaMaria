@@ -8,9 +8,6 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
--> If you have 300000+ files and you want to add in this bot then contact admin.
--> If you have any problem then connect to admin.
-
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
     ABOUT_TXT = """<b>✯ MY NAME:</b> {}
 <b>💥 CREATER:</b> <a href=https://t.me/DFF_UPDATE>DFF UPDATES</a>
@@ -22,7 +19,12 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
-    CONTECT_TXT = """Help: <b>IMDB Modules</b>
+    CONTECT_TXT = """Help: <b>Bot Admin</b>
+
+<i>🖍 If you have any question ask here.</i>
+
+<a href='https://t.me/CVBHJOI_BOT'>𝖠𝖽𝗆𝗂𝗇</a>
+"""
 
     IMDB_TXT = """Help: <b>IMDB Modules</b> 
 
