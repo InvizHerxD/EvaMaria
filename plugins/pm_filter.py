@@ -98,7 +98,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -163,7 +163,7 @@ async def advantage_spoll_choker(bot, query):
         await auto_filter(bot, query, k)
     else:
         k = await query.message.edit('This Movie Not Found In DataBase')
-        await asyncio.sleep(20)
+        await asyncio.sleep(10)
         await k.delete()
 
 
@@ -624,7 +624,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -649,11 +649,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('🗑', callback_data='close_data')]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('🗑', callback_data='close_data')]
+            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
