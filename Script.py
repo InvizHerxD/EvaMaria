@@ -31,7 +31,8 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 • /search  - <code>get the film information from various sources.</code>
 
 <b>⚠️ NOTE ⚠️</b>
-<i>IMD feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
+<i>IMD feature is currently closed for PM.  It is only available for Chat (group) right now.</i>
+"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
