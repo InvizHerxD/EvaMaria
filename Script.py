@@ -22,6 +22,9 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
+    RDX_TXT = """<b>NOTE:</b> 
+<i>how are You Baby
+I love you</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
