@@ -22,9 +22,14 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
-    RDX_TXT = """<b>NOTE:</b> 
-<i>how are You Baby
-I love you</i>"""
+    RDX_TXT = """Help: <b>IMDB Modules</b> 
+
+<b>Commands and Usage:</b>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>
+
+<b>⚠️ NOTE ⚠️</b>
+<i>IMD feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
@@ -89,9 +94,7 @@ these are the extra features of Eva Maria
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+• /info  - <code>get information about a user.</code>"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
