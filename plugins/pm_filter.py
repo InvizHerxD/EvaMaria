@@ -441,9 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),         
-            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                              
-            ],[
-            InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
+            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                                                      
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
