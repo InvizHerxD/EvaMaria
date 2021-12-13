@@ -24,15 +24,14 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 <i>🖍 If you have any question ask here.</i>
 
            <a href='https://t.me/CVBHJOI_BOT'>𝖠𝖽𝗆𝗂𝗇</a>"""
-    IMDBBUTTON_TXT = """Help: <b>IMDB Modules</b> 
+    IMDBBUTTON_TXT = """<b>IMDB Modules</b> 
 
 <b>Commands and Usage:</b>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>
 
 <b>⚠️ NOTE ⚠️</b>
-<i>IMD feature is currently closed for PM.  It is only available for Chat (group) right now.</i>
-"""
+<i>IMDb feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
