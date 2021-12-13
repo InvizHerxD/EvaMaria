@@ -572,7 +572,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='stats')
+            InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='admin')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
             InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
