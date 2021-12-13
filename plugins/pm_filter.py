@@ -459,7 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
             InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺 𝖬𝗈𝖽𝗌', callback_data='extra')
             ],[
-            InlineKeyboardButton('📹𝖨𝖬𝖣𝖻', callback_data='imdb'),           
+            InlineKeyboardButton('📹𝖨𝖬𝖣𝖻', callback_data='imdbbutton'),           
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
             ],[
             InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),            
@@ -544,6 +544,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CONNECTION_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "imdbbutton":
+        buttons = [[            
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.IMDBBUTTON_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
