@@ -432,16 +432,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [[                        
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contect')
             ],[
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾', url='https://t.me/DFF_UPDATE'),
-            InlineKeyboardButton('⚙ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-            ],[
-            InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),         
-            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                                                      
+            InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
+            InlineKeyboardButton('👤 𝖠𝖻𝗈𝗎𝗍 𝗆𝖾', callback_data='about')                                                      
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -457,11 +452,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
             InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺 𝖬𝗈𝖽𝗌', callback_data='extra')
             ],[
-            InlineKeyboardButton('📹𝖨𝖬𝖣𝖻', callback_data='imdbrdx'),           
+            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),           
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),            
-            InlineKeyboardButton('𝖸𝗈𝗎𝗋 𝖰𝗎𝖾𝗋𝗒❓', callback_data='contect')
+            ],[                        
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contectt')
             ],[
             InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
             InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
@@ -492,11 +486,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
-            ],[
+        buttons = [[                        
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
+            InlineKeyboardButton('👤 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -544,28 +536,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "Imdbrdx":
-        buttons = [[            
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.IMDBRDX_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+        )    
     elif query.data == "contect":
-        buttons = [[
-            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
-            ],[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+        buttons = [[                        
+            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
             InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CONTECT_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "contectt":
+        buttons = [[                        
+            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONTECTT_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -718,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"Here is what i found for your query: 📁 <code>{search}</code>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -730,9 +720,10 @@ async def auto_filter(client, msg, spoll=False):
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    if spoll:
-        await msg.message.delete()
+        r = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))    
+        await asyncio.sleep(120)
+        await r.delete()
+        return
         
 
 async def advantage_spell_chok(msg):
@@ -779,8 +770,10 @@ async def advantage_spell_chok(msg):
                     callback_data=f"spolling#{user}#{k}",
                 )
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn))
-    
+    btn.append([InlineKeyboardButton(text="🗑 𝖢𝗅𝗈𝗌𝖾", callback_data=f'spolling#{user}#close_spellcheck'), InlineKeyboardButton('🔍 𝖦𝗈𝗈𝗀𝗅𝖾', url='https://Google.com')])
+    f = await msg.reply("<b>I couldn't find anything related to that\nDid you mean any one of these?</b>", reply_markup=InlineKeyboardMarkup(btn))
+    await asyncio.sleep(120)
+    await f.delete()
+    return
 
 
