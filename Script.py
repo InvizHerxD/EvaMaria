@@ -1,45 +1,37 @@
 class script(object):
     START_TXT = """<b>Hello</b> {}
-MY NAME IS <a href=https://t.me/{}>{}</a>, 
+MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳, 
 
-<i>Iam A Simple Auto Filter + Movie Search + Manual Filter Bot. I Can Provide Movies In Telegram Groups. You Can Search Movies Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
+<i>I am a simple IMDb bot. I can give you IMDb data of any movie/series.</i>
 
 <b>Made With ❤ BY @DFF_UPDATE</b>"""
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
-<b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
-    ABOUT_TXT = """<b>✯ MY NAME:</b> {}
-<b>💥 CREATER:</b> <a href=https://t.me/DFF_UPDATE>DFF UPDATES</a>
-<b>💥 LIBRARY:</b> <code>PYROGRAM</code>
-<b>💥 LANGUAGE:</b> <code>PYTHON 𝟹</code>
-<b>💥 DATA BASE:</b> <code>MONGO DB</code>
-<b>💥 BOT SERVER:</b> <code>HEROKU</code>
-<b>💥 BUILD STATUS:</b> <code>v1.0.1 [ BETA ]</code></b>
-
-<b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
-    CONTECT_TXT = """Help: <b>Bot Admin</b>
+    ABOUT_TXT = """<b>Here is about me</b>
 
-<i>🖍 If you have any question ask here.</i>
-
-           <a href='https://t.me/CVBHJOI_BOT'>𝖠𝖽𝗆𝗂𝗇</a>"""
-    IMDBRDX_TXT = """<b>IMDB Modules</b> 
+"""
+    CONTECT_TXT = """<b>IMDb Modules</b> 
 
 <b>Commands and Usage:</b>
 • /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>
+• /search  - <code>get the film information from various sources.</code>  
 
-<b>⚠️ NOTE ⚠️</b>
-<i>IMDb feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
+     <b>© @DFF_UPDATE</b>"""
+    CONTECTT_TXT = """<b>IMDb Modules</b> 
+
+<b>Commands and Usage:</b>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>  
+
+     <b>© @DFF_UPDATE</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
 <i>- DFF IMDb BOT is a open source project. 
 - Source - If you want SOURCE CODE then talk to admin. 👍🏼</i>
-
-      <a href='https://t.me/CVBHJOI_BOT'>🇦 🇩 🇲 🇮 🇳</a>
-
+      
 <b>Made With ❤ BY @DFF_UPDATE</b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -57,7 +49,7 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
+- 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
@@ -65,7 +57,7 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
+<code>[Button Text](buttonurl:https://t.me/DFF_IMDb_Bot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
