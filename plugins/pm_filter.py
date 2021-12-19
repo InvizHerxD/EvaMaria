@@ -459,8 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[                        
             InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contectt')
             ],[
-            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
-            InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),            
             InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
