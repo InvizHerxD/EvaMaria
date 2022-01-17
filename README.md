@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/717715c43b2ce55b1ff2a.jpg" alt="Eva Maria Logo">
+  <img src="https://telegra.ph/file/da357d7dea131aec6054a.jpg" alt="Eva Maria Logo">
 </p>
 <h1 align="center">
-  <b>Eva Maria Bot</b>
+  <b>DFF IMDb BoT</b>
 </h1>
 
 
