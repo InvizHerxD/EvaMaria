@@ -18,11 +18,9 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/DFF_UPDATE')
-            ],
-            [
-                InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Join at Updates', url='https://t.me/DotexMovies')
             ]
+            
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -37,13 +35,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʜᴇʀᴇ', url=f'https://t.me/DotexRequest')
             ],[
-            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ❓', callback_data='contect')
+            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovies')
             ],[
-            InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
-            InlineKeyboardButton('👤 𝖠𝖻𝗈𝗎𝗍 𝗆𝖾', callback_data='about')
-        ]]
+            InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -75,14 +72,13 @@ async def start(client, message):
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        [[
+            InlineKeyboardButton('ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʜᴇʀᴇ', url=f'https://t.me/DotexRequest')
             ],[
-            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ❓', callback_data='contect')
+            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovies')
             ],[
-            InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
-            InlineKeyboardButton('👤 𝖠𝖻𝗈𝗎𝗍 𝗆𝖾', callback_data='about')
-        ]]
+            InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
