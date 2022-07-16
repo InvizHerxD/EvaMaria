@@ -1,10 +1,9 @@
 class script(object):
-    START_TXT = """<b>Hello</b> {}
-MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳, 
+    START_TXT = """<b>Welcome {} 🙋🏻‍♂️</b>
 
-<i>I am a simple IMDb bot. I can give you IMDb data of any movie/series.</i>
+<code>ɪ'ᴍ ᴅᴏᴛᴇx ᴍᴏᴠɪᴇꜱ ʙᴏᴛ, ʙᴏᴛ ꜰᴏʀ ʜᴇʟᴘɪɴɢ ᴛᴏ ꜱᴇᴀʀᴄʜ ɪɴᴅɪᴀɴ ʙᴏʟʟʏᴡᴏᴏᴅ, ᴛᴏʟʟʏᴡᴏᴏᴅ ᴏʀ ʜᴏʟʟʏᴡᴏᴏᴅ ᴍᴏᴠɪᴇꜱ. ɪ ᴄᴀɴ ʜᴇʟᴘ ᴛᴏ ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ᴡɪᴛʜ ɪᴍᴅʙ ꜰᴇᴀᴛᴜʀᴇ ᴀʟꜱᴏ.</code>
 
-<b>Made With ❤ BY @DFF_UPDATE</b>"""
+<b>ɢᴇᴛ ᴍᴏʀᴇ ɪɴꜰᴏ ᴀʙᴏᴜᴛ ᴍᴇ ʙᴇʟᴏᴡ</b>"""
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
