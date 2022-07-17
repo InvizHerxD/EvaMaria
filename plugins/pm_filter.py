@@ -391,7 +391,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     file_id=file_id,
                     caption=f_caption
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('Check DM, I have sent files in your inbox!',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -401,7 +401,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒 Join Channel and try again.",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -667,11 +667,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"Dotex Movies 1/{round(int(total_results)/10)} 🎬",callback_data="pages"), InlineKeyboardButton(text="➡️",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="Dotex Movies 1/1 🎬",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -769,7 +769,7 @@ async def advantage_spell_chok(msg):
                     callback_data=f"spolling#{user}#{k}",
                 )
             ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="🗑 𝖢𝗅𝗈𝗌𝖾", callback_data=f'spolling#{user}#close_spellcheck'), InlineKeyboardButton('🔍 𝖦𝗈𝗈𝗀𝗅𝖾', url='https://Google.com')])
+    btn.append([InlineKeyboardButton(text="🗑 Close", callback_data=f'spolling#{user}#close_spellcheck'), InlineKeyboardButton('🔍 Search', url='https://Google.com')])
     f = await msg.reply("<b>I couldn't find anything related to that\nDid you mean any one of these?</b>", reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(30)
     await f.delete()
