@@ -75,7 +75,7 @@ async def start(client, message):
         [[
             InlineKeyboardButton('ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʜᴇʀᴇ', url=f'https://t.me/DotexRequest')
             ],[
-            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovies')
+            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovie')
             ],[
             InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ]]
