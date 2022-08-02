@@ -651,7 +651,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"{get_size(file.file_size)} - {file.file_name}",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -663,11 +663,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"Dotex Movies 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="➡️",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"Dotex Movie 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="More ➡️",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="Dotex Movies 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="Dotex Movie",url='https://t.me/DotexMovie')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
