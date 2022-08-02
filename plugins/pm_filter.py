@@ -539,7 +539,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "contect":
         buttons = [[                        
             InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DotexMovie')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -550,7 +550,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "contectt":
         buttons = [[                        
             InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='help'),
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DotexRequest')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -667,7 +667,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="Join Dotex Movie 🏠",url='https://t.me/DotexMovie')]
+            [InlineKeyboardButton(text="Join Dotex Movie Here",url='https://t.me/DotexMovie')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
