@@ -667,7 +667,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="Dotex Movie",url='https://t.me/DotexMovie')]
+            [InlineKeyboardButton(text="Join Dotex Movie 🏠",url='https://t.me/DotexMovie')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
