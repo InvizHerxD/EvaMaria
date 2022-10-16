@@ -27,24 +27,24 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001772207087').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2056407064').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001589717386')
-auth_grp = environ.get('AUTH_GROUP', '-1001589717386')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001415850504')
+auth_grp = environ.get('AUTH_GROUP', '-1001415850504')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://codexun:TeamCodexun07@codexun.egmx5.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "DotexMovies")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Movies')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001587861988'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DotexHub')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '𝗬𝗼𝘂𝗿 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗠𝗼𝘃𝗶𝗲 🍿\n\nDont forget to join our official backup channel @DotexMovie for regular updates from us.\n\n➠ Team @DotexMovie copyright')
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Searched Movie 🎥</b>\n\n🏷️ Title : <a href={url}>{title} (<a href={url}/releaseinfo>{year})</a>\n🎫 Tag : {genres}\n☘️ 𝖱𝖺𝗍e : <a href={url}/ratings>{rating}</a> / 10\n💌 Lang : Hindi\n🔗 From : @DotexMovie\n\nSelect your movie quality below and just click on the button to download it 👇")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '𝗬𝗼𝘂𝗿 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗠𝗼𝘃𝗶𝗲 🍿\n\nDont forget to join our official backup channel @DotexHub for regular updates from us.\n\n➠ Team @DotexHub copyright')
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Searched Movie 🎥</b>\n\n🏷️ Title : <a href={url}>{title} (<a href={url}/releaseinfo>{year})</a>\n🎫 Tag : {genres}\n☘️ 𝖱𝖺𝗍e : <a href={url}/ratings>{rating}</a> / 10\n💌 Lang : Hindi\n🔗 From : @DotexHub\n\nSelect your movie quality below and just click on the button to download it 👇")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
