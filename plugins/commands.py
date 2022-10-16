@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('Join at Updates', url='https://t.me/DotexMovies')
+                InlineKeyboardButton('Join at Updates', url='https://t.me/DotexHub')
             ]
             
             ]
@@ -37,7 +37,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʜᴇʀᴇ', url=f'https://t.me/DotexRequest')
             ],[
-            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovies')
+            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexHub')
             ],[
             InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ]]
@@ -75,7 +75,7 @@ async def start(client, message):
         [[
             InlineKeyboardButton('ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʜᴇʀᴇ', url=f'https://t.me/DotexRequest')
             ],[
-            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/DotexMovie')
+            InlineKeyboardButton('ᴊᴏɪɴ ꜰᴏʀ ʀᴇɢᴜʟᴀʀ ᴜᴘᴅᴀᴛᴇꜱ', url=f'https://t.me/Dotexhub')
             ],[
             InlineKeyboardButton('• ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ •', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ]]
